@@ -1,6 +1,6 @@
-
-//практическая работа в классе
-// Создать собственный терминальный компонент, используя метод Run. Определить класс Person, содержащий 5 свойств. Создать коллекцию объектов класса. Вернуть коллекцию объектов в виде таблицы.
+п»ї
+//РїСЂР°РєС‚РёС‡РµСЃРєР°СЏ СЂР°Р±РѕС‚Р° РІ РєР»Р°СЃСЃРµ
+// РЎРѕР·РґР°С‚СЊ СЃРѕР±СЃС‚РІРµРЅРЅС‹Р№ С‚РµСЂРјРёРЅР°Р»СЊРЅС‹Р№ РєРѕРјРїРѕРЅРµРЅС‚, РёСЃРїРѕР»СЊР·СѓСЏ РјРµС‚РѕРґ Run. РћРїСЂРµРґРµР»РёС‚СЊ РєР»Р°СЃСЃ Person, СЃРѕРґРµСЂР¶Р°С‰РёР№ 5 СЃРІРѕР№СЃС‚РІ. РЎРѕР·РґР°С‚СЊ РєРѕР»Р»РµРєС†РёСЋ РѕР±СЉРµРєС‚РѕРІ РєР»Р°СЃСЃР°. Р’РµСЂРЅСѓС‚СЊ РєРѕР»Р»РµРєС†РёСЋ РѕР±СЉРµРєС‚РѕРІ РІ РІРёРґРµ С‚Р°Р±Р»РёС†С‹.
 /*
 var builder = WebApplication.CreateBuilder(args);
 var app = builder.Build();
@@ -59,24 +59,24 @@ class Person
 }
 */
 
-/*1. Определить сайт для создания приглашений пользователей. На главной странице сайта выводим приветствие в виде отдельно HTML страницы с использованием стилей. На этой странице добавляем ссылку на форму приглашения. На форме приглашения, пользователь вводит имя, email и номер телефона. После отправки приглашения, данные добавляем в коллекцию класса и проводим переадресацию на страницу с благодарностью за регистрацию.*/
+/*1. РћРїСЂРµРґРµР»РёС‚СЊ СЃР°Р№С‚ РґР»СЏ СЃРѕР·РґР°РЅРёСЏ РїСЂРёРіР»Р°С€РµРЅРёР№ РїРѕР»СЊР·РѕРІР°С‚РµР»РµР№. РќР° РіР»Р°РІРЅРѕР№ СЃС‚СЂР°РЅРёС†Рµ СЃР°Р№С‚Р° РІС‹РІРѕРґРёРј РїСЂРёРІРµС‚СЃС‚РІРёРµ РІ РІРёРґРµ РѕС‚РґРµР»СЊРЅРѕ HTML СЃС‚СЂР°РЅРёС†С‹ СЃ РёСЃРїРѕР»СЊР·РѕРІР°РЅРёРµРј СЃС‚РёР»РµР№. РќР° СЌС‚РѕР№ СЃС‚СЂР°РЅРёС†Рµ РґРѕР±Р°РІР»СЏРµРј СЃСЃС‹Р»РєСѓ РЅР° С„РѕСЂРјСѓ РїСЂРёРіР»Р°С€РµРЅРёСЏ. РќР° С„РѕСЂРјРµ РїСЂРёРіР»Р°С€РµРЅРёСЏ, РїРѕР»СЊР·РѕРІР°С‚РµР»СЊ РІРІРѕРґРёС‚ РёРјСЏ, email Рё РЅРѕРјРµСЂ С‚РµР»РµС„РѕРЅР°. РџРѕСЃР»Рµ РѕС‚РїСЂР°РІРєРё РїСЂРёРіР»Р°С€РµРЅРёСЏ, РґР°РЅРЅС‹Рµ РґРѕР±Р°РІР»СЏРµРј РІ РєРѕР»Р»РµРєС†РёСЋ РєР»Р°СЃСЃР° Рё РїСЂРѕРІРѕРґРёРј РїРµСЂРµР°РґСЂРµСЃР°С†РёСЋ РЅР° СЃС‚СЂР°РЅРёС†Сѓ СЃ Р±Р»Р°РіРѕРґР°СЂРЅРѕСЃС‚СЊСЋ Р·Р° СЂРµРіРёСЃС‚СЂР°С†РёСЋ.*/
 
 /*
 var builder = WebApplication.CreateBuilder(args);
 var app = builder.Build();
 
 var invitees = new List<Invitee>();
-app.UseStaticFiles(); // подтягивает файлы из локальных ресурсов 
+app.UseStaticFiles(); // РїРѕРґС‚СЏРіРёРІР°РµС‚ С„Р°Р№Р»С‹ РёР· Р»РѕРєР°Р»СЊРЅС‹С… СЂРµСЃСѓСЂСЃРѕРІ 
 
 app.MapGet("/", async context =>
 {
     var html = """
         <html>
-        <head><title>Приветствие</title></head>
+        <head><title>РџСЂРёРІРµС‚СЃС‚РІРёРµ</title></head>
         <link rel="stylesheet" href="/css/StyleSheet.css">
         <body>
-            <h1">Добро пожаловать!</h1>
-            <a href="/invite">Перейти к форме</a> 
+            <h1">Р”РѕР±СЂРѕ РїРѕР¶Р°Р»РѕРІР°С‚СЊ!</h1>
+            <a href="/invite">РџРµСЂРµР№С‚Рё Рє С„РѕСЂРјРµ</a> 
         </body>
         </html>
         """;
@@ -89,16 +89,16 @@ app.MapGet("/invite", async context =>
     var html = """
         <html>
         <head>
-        <title>Форма</title>
+        <title>Р¤РѕСЂРјР°</title>
         <link rel="stylesheet" href="/css/StyleSheet.css">
         </head>
         <body>
-            <h2>Введите данные</h2>
+            <h2>Р’РІРµРґРёС‚Рµ РґР°РЅРЅС‹Рµ</h2>
             <form method="post" action="/submit">
-                <div>Имя: <input name="name" /><div/>
+                <div>РРјСЏ: <input name="name" /><div/>
                  <div>Email: <input name="email" /><br/> <div>
-                 <div>Телефон: <input name="phone" /><br/> <div>
-                <button type="submit">Отправить</button>
+                 <div>РўРµР»РµС„РѕРЅ: <input name="phone" /><br/> <div>
+                <button type="submit">РћС‚РїСЂР°РІРёС‚СЊ</button>
             </form>
         </body>
         </html>
@@ -118,7 +118,7 @@ app.MapPost("/submit", async context =>
     };
     invitees.Add(invitee);
 
-    context.Response.Redirect("/thankyou"); // перенаправление
+    context.Response.Redirect("/thankyou"); // РїРµСЂРµРЅР°РїСЂР°РІР»РµРЅРёРµ
 });
 
 app.MapGet("/thankyou", async context =>
@@ -126,12 +126,12 @@ app.MapGet("/thankyou", async context =>
     var html = """
         <html>
         <head>
-        <title>Спасибо</title>
+        <title>РЎРїР°СЃРёР±Рѕ</title>
         <link rel="stylesheet" href="/css/StyleSheet.css">
         </head>
         <body>
-            <h2>Спасибо за регистрацию!</h2>
-            <a href="/">Вернуться на главную</a>
+            <h2>РЎРїР°СЃРёР±Рѕ Р·Р° СЂРµРіРёСЃС‚СЂР°С†РёСЋ!</h2>
+            <a href="/">Р’РµСЂРЅСѓС‚СЊСЃСЏ РЅР° РіР»Р°РІРЅСѓСЋ</a>
         </body>
         </html>
         """;
@@ -153,7 +153,7 @@ record Invitee
 
 
 /*
- 2.Реализовать обработку POST запроса с возвращением ответа. Когда вы запустите приложение и сделаете POST-запрос к URL "/api/greeting" с телом запроса, содержащим строку (например, {"name": "John"}), вы должны получить ответ с персонализированным приветствием (например, "Hello, John!").
+ 2.Р РµР°Р»РёР·РѕРІР°С‚СЊ РѕР±СЂР°Р±РѕС‚РєСѓ POST Р·Р°РїСЂРѕСЃР° СЃ РІРѕР·РІСЂР°С‰РµРЅРёРµРј РѕС‚РІРµС‚Р°. РљРѕРіРґР° РІС‹ Р·Р°РїСѓСЃС‚РёС‚Рµ РїСЂРёР»РѕР¶РµРЅРёРµ Рё СЃРґРµР»Р°РµС‚Рµ POST-Р·Р°РїСЂРѕСЃ Рє URL "/api/greeting" СЃ С‚РµР»РѕРј Р·Р°РїСЂРѕСЃР°, СЃРѕРґРµСЂР¶Р°С‰РёРј СЃС‚СЂРѕРєСѓ (РЅР°РїСЂРёРјРµСЂ, {"name": "John"}), РІС‹ РґРѕР»Р¶РЅС‹ РїРѕР»СѓС‡РёС‚СЊ РѕС‚РІРµС‚ СЃ РїРµСЂСЃРѕРЅР°Р»РёР·РёСЂРѕРІР°РЅРЅС‹Рј РїСЂРёРІРµС‚СЃС‚РІРёРµРј (РЅР°РїСЂРёРјРµСЂ, "Hello, John!").
  */
 /*
 using System.Text.Json;
@@ -162,9 +162,9 @@ var builder = WebApplication.CreateBuilder(args);
 var app = builder.Build();
 app.UseStaticFiles();
 
-app.MapGet("/", () => "Сервер запущен. Ожидается отправка POST-запроса на /api/greeting");
+app.MapGet("/", () => "РЎРµСЂРІРµСЂ Р·Р°РїСѓС‰РµРЅ. РћР¶РёРґР°РµС‚СЃСЏ РѕС‚РїСЂР°РІРєР° POST-Р·Р°РїСЂРѕСЃР° РЅР° /api/greeting");
 
-// отсылка с клиента через Postman в виде Json файла.
+// РѕС‚СЃС‹Р»РєР° СЃ РєР»РёРµРЅС‚Р° С‡РµСЂРµР· Postman РІ РІРёРґРµ Json С„Р°Р№Р»Р°.
 // {
 // "name": "John"
 // }
@@ -172,15 +172,15 @@ app.MapGet("/", () => "Сервер запущен. Ожидается отправка POST-запроса на /api/g
 app.MapPost("/api/greeting", async (HttpContext context) =>
 {
     using var reader = new StreamReader(context.Request.Body);
-    var body = await reader.ReadToEndAsync(); // читаю, что пришло
+    var body = await reader.ReadToEndAsync(); // С‡РёС‚Р°СЋ, С‡С‚Рѕ РїСЂРёС€Р»Рѕ
 
-    var data = JsonSerializer.Deserialize<Dictionary<string, string>>(body); // раскладываю на name и его значение
+    var data = JsonSerializer.Deserialize<Dictionary<string, string>>(body); // СЂР°СЃРєР»Р°РґС‹РІР°СЋ РЅР° name Рё РµРіРѕ Р·РЅР°С‡РµРЅРёРµ
     string name = data?["name"] ?? "stranger";
 
     var html = $"""
         <html>
         <head>
-        <title>Приветствие</title>
+        <title>РџСЂРёРІРµС‚СЃС‚РІРёРµ</title>
         <link rel="stylesheet" href="/css/StyleSheet.css">
         </head>
         <body>
@@ -194,7 +194,7 @@ app.MapPost("/api/greeting", async (HttpContext context) =>
 
 app.Run();*/
 
-//// вариант с взятием имени с формы. 
+//// РІР°СЂРёР°РЅС‚ СЃ РІР·СЏС‚РёРµРј РёРјРµРЅРё СЃ С„РѕСЂРјС‹. 
 
 /*
 var builder = WebApplication.CreateBuilder(args);
@@ -207,14 +207,14 @@ app.MapGet("/", async context =>
         <html>
         <head>
         <meta charset="utf-8">
-        <title>Форма</title>
+        <title>Р¤РѕСЂРјР°</title>
         <link rel="stylesheet" href="/css/StyleSheet.css">
         </head>
         <body>
-            <h2>Введите данные</h2>
+            <h2>Р’РІРµРґРёС‚Рµ РґР°РЅРЅС‹Рµ</h2>
             <form method="post" action="/submit">
-                <div>Имя: <input name="name" /><div/>
-                <button type="submit">Отправить</button>
+                <div>РРјСЏ: <input name="name" /><div/>
+                <button type="submit">РћС‚РїСЂР°РІРёС‚СЊ</button>
             </form>
         </body>
         </html>
@@ -233,11 +233,11 @@ app.MapPost("/submit", async context =>
         <html>
         <head>
             <meta charset="utf-8">
-            <title>Спасибо</title>
+            <title>РЎРїР°СЃРёР±Рѕ</title>
             <link rel="stylesheet" href="/css/StyleSheet.css">
         </head>
         <body>
-            <h2>Привет, {name}!</h2>
+            <h2>РџСЂРёРІРµС‚, {name}!</h2>
         </body>
         </html>
         """;
@@ -252,7 +252,7 @@ app.Run();
 
 
 /*
-3. Используя JavaScript или любой другой Фреймворк или PostMan, отправьте JSON объект на любое действие в C#. После получение, отобразите это значение на новой странице.
+3. РСЃРїРѕР»СЊР·СѓСЏ JavaScript РёР»Рё Р»СЋР±РѕР№ РґСЂСѓРіРѕР№ Р¤СЂРµР№РјРІРѕСЂРє РёР»Рё PostMan, РѕС‚РїСЂР°РІСЊС‚Рµ JSON РѕР±СЉРµРєС‚ РЅР° Р»СЋР±РѕРµ РґРµР№СЃС‚РІРёРµ РІ C#. РџРѕСЃР»Рµ РїРѕР»СѓС‡РµРЅРёРµ, РѕС‚РѕР±СЂР°Р·РёС‚Рµ СЌС‚Рѕ Р·РЅР°С‡РµРЅРёРµ РЅР° РЅРѕРІРѕР№ СЃС‚СЂР°РЅРёС†Рµ.
  */
 
 /*
@@ -290,9 +290,9 @@ app.MapGet("/", async context =>
             </script>
         </head>
         <body>
-            <h2>Введите имя:</h2>
+            <h2>Р’РІРµРґРёС‚Рµ РёРјСЏ:</h2>
             <input type="text" id="name" />
-            <button onclick="sendData()">Отправить</button>
+            <button onclick="sendData()">РћС‚РїСЂР°РІРёС‚СЊ</button>
         </body>
         </html>
         """;
@@ -307,16 +307,16 @@ app.MapPost("/api/show", async context =>
     var body = await reader.ReadToEndAsync();
 
     var data = JsonSerializer.Deserialize<Dictionary<string, string>>(body);
-    var name = data?["name"] ?? "гость";
+    var name = data?["name"] ?? "РіРѕСЃС‚СЊ";
 
     var html = $"""
         <html>
         <head>
-            <title>Приветствие</title>
+            <title>РџСЂРёРІРµС‚СЃС‚РІРёРµ</title>
             <link rel="stylesheet" href="/css/StyleSheet.css">
         </head>
         <body>
-            <h2>Привет, {name}!</h2>
+            <h2>РџСЂРёРІРµС‚, {name}!</h2>
         </body>
         </html>
         """;
@@ -331,11 +331,11 @@ app.Run();
 */
 
 /*
- 1.	Реализуйте конечную точку API, которая принимает строковый параметр и возвращает длину строки. Запрос к точке выглядит следующим образом:
+ 1.	Р РµР°Р»РёР·СѓР№С‚Рµ РєРѕРЅРµС‡РЅСѓСЋ С‚РѕС‡РєСѓ API, РєРѕС‚РѕСЂР°СЏ РїСЂРёРЅРёРјР°РµС‚ СЃС‚СЂРѕРєРѕРІС‹Р№ РїР°СЂР°РјРµС‚СЂ Рё РІРѕР·РІСЂР°С‰Р°РµС‚ РґР»РёРЅСѓ СЃС‚СЂРѕРєРё. Р—Р°РїСЂРѕСЃ Рє С‚РѕС‡РєРµ РІС‹РіР»СЏРґРёС‚ СЃР»РµРґСѓСЋС‰РёРј РѕР±СЂР°Р·РѕРј:
 
 https://localhost:XXXX/api/length/Hello-World
 
-Или так:
+РР»Рё С‚Р°Рє:
 
 https://localhost:XXXX/api?Hello-World
 
@@ -351,11 +351,11 @@ app.MapGet("/", async context => {
     var html = """
         <html>
         <head>
-        <title>Приветствие</title>
+        <title>РџСЂРёРІРµС‚СЃС‚РІРёРµ</title>
         <link rel="stylesheet" href="/css/StyleSheet.css">
         </head>
         <body>
-            <h2>сервер запущен</h2>
+            <h2>СЃРµСЂРІРµСЂ Р·Р°РїСѓС‰РµРЅ</h2>
         </body>
         </html>
         """;
@@ -369,3 +369,7 @@ app.MapGet("/api/length", (string text) =>
 });
 
 app.Run();
+
+// Postman
+/* http://localhost:5206/api/length?text=hello, everyone  
+ */
